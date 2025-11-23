@@ -1,5 +1,3 @@
-from tinygrad import Tensor
-
-a = Tensor.empty(4, 4)
-b = Tensor.empty(4, 4)
-print((a+b).tolist())
+    a = Tensor([[1, 2], [3, 4]])
+    b = Tensor([[5, 6], [7, 8]])
+    print(a.matmul(b).numpy())
